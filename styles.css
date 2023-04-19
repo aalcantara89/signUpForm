@@ -22,30 +22,37 @@ body {
 .middle-bar {
     flex: 1;
     padding: 16px;
-    background-color: #ffffff;
-    
+    background-color: #ffffff;    
 }
 .bottom-bar {
     flex: 1;
-    padding: 80px;
-    background-color: #F6F7F8;    
+    padding: 25px;
+    background-color: #F6F7F8;   
+    margin-top: 100px;
 }
+
 input[type] {
     border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    height: 20px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
+  input:focus
+  {
+     outline: none;
+  } 
+  input[type="password"]:focus{
+    outline: 2px solid #ea0918;
+  }
   .main-div {
     width: 100%; /* Set full-width to expand the whole page */
-    height: 100%;
+    height: 100%;Log in
   }
   label {
     display:block;
 }
-input {
-  align-content: start;
-  border-radius: 5%;
-}
+
 .odin-sidebar{
     font-family: norseFont;
     height: 100vh;
@@ -79,6 +86,7 @@ h1 {
 }
 p{
     font-weight: bold;
+    padding-top: 20px;
 }
 button{
     background-color: #596D48;
@@ -89,8 +97,15 @@ button{
     font-size: 1rem;
     line-height: 2.5;
 }
+.column {
+    float: left;
+    width: 40%;
+}
 @font-face {
     font-family: norseFont;
     src: url(Norse-Bold.otf);
 }
-  
+span{
+    color: #596D48;
+    font:bold;
+}
